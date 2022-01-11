@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<table class = "table">
+	{% for data in dataset %}
+
+		<tr>
+			<td>{{data.name}}</td>
+			<td>{{data.salary}}</td>
+		</tr>
+
+	{% endfor %}
+</table>
+{% endblock %}
